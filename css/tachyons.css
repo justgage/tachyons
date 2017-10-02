@@ -383,7 +383,7 @@ img { max-width: 100%; }
 .b--mid-gray { border-color: #555; }
 .b--gray { border-color: #666; }
 .b--jumbo { border-color: #878787; }
-.b--light-jumbo { border-color: #aaa; }
+.b--anti-flash-white { border-color: #f4f3f6; }
 .b--iron { border-color: #ccc; }
 .b--mystic { border-color: #e4e9f0; }
 .b--white-smoke { border-color: #f5f5f7; }
@@ -458,9 +458,9 @@ img { max-width: 100%; }
 .b--jumbo-hover:hover { border-color: #878787; transition: border-color .25s ease-in-out; }
 .b--jumbo-hover:focus { border-color: #878787; transition: border-color .25s ease-in-out; }
 .b--jumbo-hover:active { border-color: #878787; transition: border-color .25s ease-in-out; }
-.b--light-jumbo-hover:hover { border-color: #aaa; transition: border-color .25s ease-in-out; }
-.b--light-jumbo-hover:focus { border-color: #aaa; transition: border-color .25s ease-in-out; }
-.b--light-jumbo-hover:active { border-color: #aaa; transition: border-color .25s ease-in-out; }
+.b--anti-flash-white-hover:hover { border-color: #f4f3f6; transition: border-color .25s ease-in-out; }
+.b--anti-flash-white-hover:focus { border-color: #f4f3f6; transition: border-color .25s ease-in-out; }
+.b--anti-flash-white-hover:active { border-color: #f4f3f6; transition: border-color .25s ease-in-out; }
 .b--iron-hover:hover { border-color: #ccc; transition: border-color .25s ease-in-out; }
 .b--iron-hover:focus { border-color: #ccc; transition: border-color .25s ease-in-out; }
 .b--iron-hover:active { border-color: #ccc; transition: border-color .25s ease-in-out; }
@@ -730,7 +730,7 @@ img { max-width: 100%; }
    -l  = large
 
  */
-.shadow-1 { box-shadow: 0 0 4px 2px rgba( 0, 0, 0, .2 ); }
+.shadow-1 { box-shadow: 0 1px 3px rgba( 0, 0, 0, .12 ); }
 .shadow-2 { box-shadow: 0 0 8px 2px rgba( 0, 0, 0, .2 ); }
 .shadow-3 { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, .2 ); }
 .shadow-4 { box-shadow: 2px 2px 8px 0 rgba( 0, 0, 0, .2 ); }
@@ -1087,6 +1087,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .lh-solid { line-height: 1; }
 .lh-title { line-height: 1.25; }
 .lh-copy { line-height: 1.5; }
+.lh-copy-mega { line-height: 2; }
 /*
 
    LINKS
@@ -1317,7 +1318,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .mid-gray { color: #555; }
 .gray { color: #666; }
 .jumbo { color: #878787; }
-.light-jumbo { color: #aaa; }
+.anti-flash-white { color: #f4f3f6; }
 .iron { color: #ccc; }
 .mystic { color: #e4e9f0; }
 .white-smoke { color: #f5f5f7; }
@@ -1374,7 +1375,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-mid-gray { background-color: #555; }
 .bg-gray { background-color: #666; }
 .bg-jumbo { background-color: #878787; }
-.bg-light-jumbo { background-color: #aaa; }
+.bg-anti-flash-white { background-color: #f4f3f6; }
 .bg-iron { background-color: #ccc; }
 .bg-mystic { background-color: #e4e9f0; }
 .bg-white-smoke { background-color: #f5f5f7; }
@@ -1426,8 +1427,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-gray:focus { color: #666; }
 .hover-jumbo:hover { color: #878787; }
 .hover-jumbo:focus { color: #878787; }
-.hover-light-jumbo:hover { color: #aaa; }
-.hover-light-jumbo:focus { color: #aaa; }
+.hover-anti-flash-white:hover { color: #f4f3f6; }
+.hover-anti-flash-white:focus { color: #f4f3f6; }
 .hover-iron:hover { color: #ccc; }
 .hover-iron:focus { color: #ccc; }
 .hover-mystic:hover { color: #e4e9f0; }
@@ -1485,8 +1486,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-bg-gray:focus { background-color: #666; }
 .hover-bg-jumbo:hover { background-color: #878787; }
 .hover-bg-jumbo:focus { background-color: #878787; }
-.hover-bg-light-jumbo:hover { background-color: #aaa; }
-.hover-bg-light-jumbo:focus { background-color: #aaa; }
+.hover-bg-anti-flash-white:hover { background-color: #f4f3f6; }
+.hover-bg-anti-flash-white:focus { background-color: #f4f3f6; }
 .hover-bg-iron:hover { background-color: #ccc; }
 .hover-bg-iron:focus { background-color: #ccc; }
 .hover-bg-mystic:hover { background-color: #e4e9f0; }
@@ -1829,6 +1830,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .nr5 { margin-right: -4rem; }
 .nr6 { margin-right: -8rem; }
 .nr7 { margin-right: -16rem; }
+.nb05 { margin-bottom: -.125rem; }
 .nb1 { margin-bottom: -.25rem; }
 .nb2 { margin-bottom: -.5rem; }
 .nb3 { margin-bottom: -1rem; }
@@ -1850,7 +1852,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 */
 .collapse { border-collapse: collapse; border-spacing: 0; }
-.striped--light-jumbo:nth-child(odd) { background-color: #aaa; }
+.striped--anti-flash-white:nth-child(odd) { background-color: #f4f3f6; }
 .striped--iron:nth-child(odd) { background-color: #ccc; }
 .striped--mystic:nth-child(odd) { background-color: #e4e9f0; }
 .striped--white-smoke:nth-child(odd) { background-color: #f5f5f7; }
@@ -2425,6 +2427,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .lh-solid-ns { line-height: 1; }
  .lh-title-ns { line-height: 1.25; }
  .lh-copy-ns { line-height: 1.5; }
+ .lh-copy-mega-ns { line-height: 2; }
  .mw-100-ns { max-width: 100%; }
  .mw1-ns { max-width: 1rem; }
  .mw2-ns { max-width: 2rem; }
@@ -2614,6 +2617,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .nr5-ns { margin-right: -4rem; }
  .nr6-ns { margin-right: -8rem; }
  .nr7-ns { margin-right: -16rem; }
+ .nb05-ns { margin-bottom: -.125rem; }
  .nb1-ns { margin-bottom: -.25rem; }
  .nb2-ns { margin-bottom: -.5rem; }
  .nb3-ns { margin-bottom: -1rem; }
@@ -2840,6 +2844,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .lh-solid-m { line-height: 1; }
  .lh-title-m { line-height: 1.25; }
  .lh-copy-m { line-height: 1.5; }
+ .lh-copy-mega-m { line-height: 2; }
  .mw-100-m { max-width: 100%; }
  .mw1-m { max-width: 1rem; }
  .mw2-m { max-width: 2rem; }
@@ -3029,6 +3034,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .nr5-m { margin-right: -4rem; }
  .nr6-m { margin-right: -8rem; }
  .nr7-m { margin-right: -16rem; }
+ .nb05-m { margin-bottom: -.125rem; }
  .nb1-m { margin-bottom: -.25rem; }
  .nb2-m { margin-bottom: -.5rem; }
  .nb3-m { margin-bottom: -1rem; }
@@ -3255,6 +3261,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .lh-solid-l { line-height: 1; }
  .lh-title-l { line-height: 1.25; }
  .lh-copy-l { line-height: 1.5; }
+ .lh-copy-mega-l { line-height: 2; }
  .mw-100-l { max-width: 100%; }
  .mw1-l { max-width: 1rem; }
  .mw2-l { max-width: 2rem; }
@@ -3444,6 +3451,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .nr5-l { margin-right: -4rem; }
  .nr6-l { margin-right: -8rem; }
  .nr7-l { margin-right: -16rem; }
+ .nb05-l { margin-bottom: -.125rem; }
  .nb1-l { margin-bottom: -.25rem; }
  .nb2-l { margin-bottom: -.5rem; }
  .nb3-l { margin-bottom: -1rem; }
